@@ -1,0 +1,28 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- script: |
+    echo "Installing dependencies"
+    # Install necessary tools and libraries, such as ampy, esptool, etc.
+  displayName: 'Install dependencies'
+
+- script: |
+    echo "Building MicroPython code"
+    # Add your commands or scripts for compiling the MicroPython code
+  displayName: 'Build firmware'
+
+- script: |
+    echo "Uploading firmware to device"
+    # Add your commands or scripts to upload the firmware to the device
+  displayName: 'Deploy firmware to device'
+
+  
