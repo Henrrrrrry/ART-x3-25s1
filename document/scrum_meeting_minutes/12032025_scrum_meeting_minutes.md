@@ -6,7 +6,7 @@
 
 
 #### Date: 12/03/2025
-#### Meeting Facilitor: Erike W.
+#### Meeting Facilitor: Erika W.
 #### Attendees: Qianwen Shen, Jia hou, Muchen Li, Hongyu Li, Leliang Wang, Zijun Zhou
 #### Minute Taker: Jia Hou
 ***
