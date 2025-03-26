@@ -4,7 +4,7 @@
 
 **Client:** Sui Jackson
 
-**Attendees:** Qianwen Shen, Jia Hou, Muchen Li, Hongyu Li, Leliang Wang, Zijun Zhou
+**Attendees:** Qianwen Shen, Muchen Li, Hongyu Li, Leliang Wang, Zijun Zhou
 
 **Minute Taker:** Qianwen Shen
 
