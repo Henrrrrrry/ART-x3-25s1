@@ -12,3 +12,17 @@ As Michael walks beneath a tall pole along the pathway, a spotlight suddenly shi
 
 Michael finds the experience transforms his usual walk. He becomes aware of himself in the space, notices other students watching him, and becomes conscious of his movements. After trying different ways of moving to see how the spotlight responds, he continues on his way. When he moves out of range, the spotlight transitions to follow another student entering the area. The next day, Michael purposely takes the same route again, curious to experience the interactive installation once more.
 
+While the spotlight installation creates a novel interactive experience, it also raises important privacy considerations. Some students might feel uncomfortable being suddenly illuminated in a public space without prior consent. Even the feeling of being tracked or observed by an automated system can trigger anxiety or discomfort in certain individuals, especially those who value personal privacy in public spaces or have had negative experiences with surveillance.
+
+To address these legitimate privacy concerns, the SpotlightTrack installation includes several thoughtfully designed elements:
+
+1. **Clear Notification Signage**: Signs are prominently displayed at all entrances to the installation area, informing visitors that they are entering an interactive art space where motion tracking technology is in use.
+
+2. **Opt-out Pathway**: An alternative pathway is available for those who prefer not to participate in the interactive experience, clearly marked to allow people to bypass the installation area.
+
+3. **Limited Data Collection**: The system is designed to track movement only, without capturing or storing any personally identifiable information or images. No facial recognition is employed.
+
+4. **Transparent Technology**: An information panel near the installation explains how the technology works, what data is (and isn't) being collected, and the artistic purpose behind the installation.
+
+5. **Time-Limited Operation**: The installation operates only during specific hours, which are clearly communicated to the campus community, allowing people to plan their routes accordingly.
+
