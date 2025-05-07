@@ -56,60 +56,100 @@ def set_servo_pulse(channel, pulse_us):
     i2c.writeto_mem(PCA9685_ADDR, channel_base, bytes(data))
     print(f"设置通道{channel}脉宽为{pulse_us}微秒 (值={pulse_count})")
 
-# 测试FS90R连续旋转舵机
+# 测试两个FS90R连续旋转舵机
 try:
     if reset_pca9685():
-        channel = 0  # S0通道
-        print("\n测试FS90R连续旋转舵机")
+        motor1_channel = 0  # S0通道
+        motor2_channel = 1  # S1通道
+        stop_pulse = 1530   # 使用您发现的精确停止点
 
-        # 停止状态
-        print("停止电机")
-        set_servo_pulse(channel, 1500)  # 中间位置 - 停止
+        print("\n测试两个FS90R连续旋转舵机")
+
+        # 首先确保两个电机都停止
+        print("两个电机都停止")
+        set_servo_pulse(motor1_channel, stop_pulse)
+        set_servo_pulse(motor2_channel, stop_pulse)
+        time.sleep(2)
+
+        # 测试电机1（S0通道）
+        print("\n测试电机1 (S0通道)")
+        # 正向旋转
+        print("电机1正向旋转")
+        set_servo_pulse(motor1_channel, 1700)
         time.sleep(3)
-
-        # 正向旋转 - 慢速
-        print("正向旋转 - 慢速")
-        set_servo_pulse(channel, 1600)  # 稍高于中间值
-        time.sleep(3)
-
-        # 正向旋转 - 中速
-        print("正向旋转 - 中速")
-        set_servo_pulse(channel, 1700)
-        time.sleep(3)
-
-        # 正向旋转 - 快速
-        print("正向旋转 - 快速")
-        set_servo_pulse(channel, 2000)  # 最高值
-        time.sleep(3)
-
         # 停止
-        print("停止电机")
-        set_servo_pulse(channel, 1500)
+        print("电机1停止")
+        set_servo_pulse(motor1_channel, stop_pulse)
+        time.sleep(2)
+        # 反向旋转
+        print("电机1反向旋转")
+        set_servo_pulse(motor1_channel, 1300)
         time.sleep(3)
-
-        # 反向旋转 - 慢速
-        print("反向旋转 - 慢速")
-        set_servo_pulse(channel, 1400)  # 稍低于中间值
-        time.sleep(3)
-
-        # 反向旋转 - 中速
-        print("反向旋转 - 中速")
-        set_servo_pulse(channel, 1300)
-        time.sleep(3)
-
-        # 反向旋转 - 快速
-        print("反向旋转 - 快速")
-        set_servo_pulse(channel, 1000)  # 最低值
-        time.sleep(3)
-
         # 停止
-        print("停止电机")
-        set_servo_pulse(channel, 1500)
+        print("电机1停止")
+        set_servo_pulse(motor1_channel, stop_pulse)
+        time.sleep(2)
 
-        print("测试完成")
+        # 测试电机2（S1通道）
+        print("\n测试电机2 (S1通道)")
+        # 正向旋转
+        print("电机2正向旋转")
+        set_servo_pulse(motor2_channel, 1700)
+        time.sleep(3)
+        # 停止
+        print("电机2停止")
+        set_servo_pulse(motor2_channel, stop_pulse)
+        time.sleep(2)
+        # 反向旋转
+        print("电机2反向旋转")
+        set_servo_pulse(motor2_channel, 1300)
+        time.sleep(3)
+        # 停止
+        print("电机2停止")
+        set_servo_pulse(motor2_channel, stop_pulse)
+        time.sleep(2)
+
+        # 同时测试两个电机
+        print("\n同时测试两个电机")
+        # 两个电机一起正向旋转
+        print("两个电机同时正向旋转")
+        set_servo_pulse(motor1_channel, 1700)
+        set_servo_pulse(motor2_channel, 1700)
+        time.sleep(3)
+        # 两个电机停止
+        print("两个电机停止")
+        set_servo_pulse(motor1_channel, stop_pulse)
+        set_servo_pulse(motor2_channel, stop_pulse)
+        time.sleep(2)
+        # 两个电机一起反向旋转
+        print("两个电机同时反向旋转")
+        set_servo_pulse(motor1_channel, 1300)
+        set_servo_pulse(motor2_channel, 1300)
+        time.sleep(3)
+        # 两个电机停止
+        print("两个电机停止")
+        set_servo_pulse(motor1_channel, stop_pulse)
+        set_servo_pulse(motor2_channel, stop_pulse)
+        time.sleep(2)
+        # 两个电机相反方向旋转
+        print("两个电机相反方向旋转")
+        set_servo_pulse(motor1_channel, 1700)  # 电机1正向
+        set_servo_pulse(motor2_channel, 1300)  # 电机2反向
+        time.sleep(3)
+        # 两个电机停止
+        print("两个电机停止")
+        set_servo_pulse(motor1_channel, stop_pulse)
+        set_servo_pulse(motor2_channel, stop_pulse)
+
+        print("\n测试完成")
 
 except Exception as e:
     import sys
     print("发生错误:", e)
     sys.print_exception(e)
-
+    # 确保错误时电机也停止
+    try:
+        set_servo_pulse(0, 1530)
+        set_servo_pulse(1, 1530)
+    except:
+        pass
