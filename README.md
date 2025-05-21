@@ -80,12 +80,12 @@ SpotlightTrack was developed by a group of artists and engineers passionate abou
 ### Contact Information
 
 - Email:
-- u7709835@anu.edu.au
-- u7776180@anu.edu.au
-- u7731692@anu.edu.au
-- u7619416@anu.edu.au
-- u7726387@anu.edu.au
-- u7692205@anu.edu.au
+- Muchen Li: u7709835@anu.edu.au
+- Hongyu Li: u7776180@anu.edu.au
+- Jia Hou: u7731692@anu.edu.au
+- Zijun Zhou: u7619416@anu.edu.au
+- Qianwen Shen: u7726387@anu.edu.au
+- Leliang Wang: u7692205@anu.edu.au
 
 ---
 © 2025 SpotlightTrack. All rights reserved.
