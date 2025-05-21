@@ -30,6 +30,7 @@ SpotlightTrack combines advanced motion tracking technology with interactive cap
 - Resolution: QVGA (320x240)
 - Response time: <100ms
 - Operating temperature: 0°C to 40°C
+- [**Technical Document**](technicalDocument.md)
 
 ### Applications
 
