@@ -1,4 +1,5 @@
 # ART-x3-25s1
+
 # SpotlightTrack
 
 ## Automated Motion Tracking System
@@ -20,6 +21,15 @@ SpotlightTrack combines advanced motion tracking technology with interactive cap
 - **High Adaptability**: Suitable for various space sizes and layouts
 - **High Reliability**: Stable tracking algorithms ensure consistent performance
 
+### Technical Specifications
+
+- Based on OpenMV H7 Plus camera module for image processing
+- Uses PCA9685 PWM driver chip for servo control
+- Two FS90R servo motors for horizontal and vertical tracking
+- Tracking based on Haar feature classifier for upper body detection
+- Resolution: QVGA (320x240)
+- Response time: <100ms
+- Operating temperature: 0°C to 40°C
 
 ### Applications
 
@@ -32,26 +42,36 @@ SpotlightTrack combines advanced motion tracking technology with interactive cap
 ### Installation Guide
 
 1. **Hardware Setup**
-   - Mount sensor unit above target area
-   - Connect controller to power
-   - Adjust sensor angles to cover desired space
+   - Mount OpenMV camera module above target area
+   - Connect PCA9685 driver to OpenMV via I2C
+   - Attach FS90R servos to the mounting system
+   - Adjust camera angles to cover desired space
 
 2. **Software Configuration**
-   - Connect to controller using the companion application
+   - Use OpenMV IDE to upload tracking code to the camera module
+   - Ensure "haarcascade_upperbody.cascade" file is saved on the OpenMV's SD card
    - Calibrate the system to match space dimensions
-   - Set tracking parameters and interactive behaviors
+   - Set tracking parameters for optimal performance
 
 3. **Testing and Adjustment**
    - Perform initial movement tests to verify tracking accuracy
-   - Fine-tune system response
-   - Save configuration profiles for future use
+   - Check servo response to different tracking scenarios
+   - Adjust tracking sensitivity if needed
+
+### System Operation
+
+- The system uses grayscale image processing to detect upper body shapes
+- IoU (Intersection over Union) algorithm maintains consistent subject tracking
+- Servo motors adjust based on calculated position error:
+  - Small error (< 15 pixels): Slow or no movement
+  - Large error (> 40 pixels): Faster adjustment
+- Motors automatically stop when no subject is detected
 
 ### Maintenance and Support
 
 - Quarterly system checks recommended
-- Firmware updates delivered automatically via Wi-Fi
+- Firmware updates delivered via USB using OpenMV IDE
 - Technical support available through dedicated portal
-- One-year warranty, extendable
 
 ### About Us
 
@@ -59,7 +79,13 @@ SpotlightTrack was developed by a group of artists and engineers passionate abou
 
 ### Contact Information
 
-- Email: u7709835@anu.edu.au
----
+- Email:
+- u7709835@anu.edu.au
+- u7776180@anu.edu.au
+- u7731692@anu.edu.au
+- u7619416@anu.edu.au
+- u7726387@anu.edu.au
+- u7692205@anu.edu.au
 
+---
 © 2025 SpotlightTrack. All rights reserved.
