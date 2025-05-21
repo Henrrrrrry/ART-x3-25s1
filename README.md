@@ -1,17 +1,16 @@
 # ART-x3-25s1
 # SpotlightTrack
 
-## Automated Motion Tracking Lighting System
+## Automated Motion Tracking System
 
-SpotlightTrack is an innovative automated motion tracking lighting system designed for interactive installation artists, capable of transforming ordinary walkways into engaging interactive spaces. By intelligently tracking and highlighting people within an area, SpotlightTrack creates a unique atmosphere of perceived presence and social connection.
+SpotlightTrack is an innovative automated motion tracking system designed for interactive installation artists, capable of transforming ordinary walkways into engaging interactive spaces. By intelligently tracking and highlighting people within an area, SpotlightTrack creates a unique atmosphere of perceived presence and social connection.
 
 ### Product Overview
 
-SpotlightTrack combines advanced motion tracking technology with automated lighting control, providing an easy-to-use solution that can be deployed without specialized technical knowledge. The system can:
+SpotlightTrack combines advanced motion tracking technology with interactive capabilities, providing an easy-to-use solution that can be deployed without specialized technical knowledge. The system can:
 
 - Seamlessly follow people's smooth, continuous movements
 - Intelligently switch between multiple subjects
-- Automatically adjust beam intensity and focus
 - Create dynamic interactive experiences
 
 ### Key Features
@@ -19,7 +18,6 @@ SpotlightTrack combines advanced motion tracking technology with automated light
 - **Simple Deployment**: Plug-and-play design minimizes installation time
 - **Autonomous Operation**: Once set up, the system runs independently without continuous monitoring
 - **High Adaptability**: Suitable for various space sizes and layouts
-- **Customizable**: Flexible setup options to meet different artistic visions
 - **High Reliability**: Stable tracking algorithms ensure consistent performance
 
 
@@ -35,17 +33,17 @@ SpotlightTrack combines advanced motion tracking technology with automated light
 
 1. **Hardware Setup**
    - Mount sensor unit above target area
-   - Connect controller to power and DMX lighting fixtures
+   - Connect controller to power
    - Adjust sensor angles to cover desired space
 
 2. **Software Configuration**
    - Connect to controller using the companion application
    - Calibrate the system to match space dimensions
-   - Set tracking parameters and lighting behaviors
+   - Set tracking parameters and interactive behaviors
 
 3. **Testing and Adjustment**
    - Perform initial movement tests to verify tracking accuracy
-   - Fine-tune light response and intensity
+   - Fine-tune system response
    - Save configuration profiles for future use
 
 ### Maintenance and Support
@@ -62,7 +60,6 @@ SpotlightTrack was developed by a group of artists and engineers passionate abou
 ### Contact Information
 
 - Email: u7709835@anu.edu.au
-
 ---
 
 © 2025 SpotlightTrack. All rights reserved.
