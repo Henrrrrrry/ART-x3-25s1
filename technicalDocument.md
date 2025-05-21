@@ -116,10 +116,10 @@ loop {
 ## IX. Appendix -- Hardware Images and Structures
 
 ### Main Camera - OpenMV H7 Plus
-![OpenMV H7 Plus](images/H7 plus.png)
+![OpenMV H7 Plus](images/H7_plus.png)
 
 ### Connection Module - OpenMV Servo Shield Pinout
-![OpenMV Servo Shield Pinout](images/R1 Servo shield.png)
+![OpenMV Servo Shield Pinout](images/R1_Servo_shield.png)
 
 ### FS90R Servo
-![FS90R Servo](images/FS90R motor.png)
+![FS90R Servo](images/FS90R_motor.png)
